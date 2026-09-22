@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manu Murukesan — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F4EF; --ink:#17191C; --ink-soft:#4A4F55;
+    --rule:#C9C4B7; --blueprint:#2F4B7C; --rust:#B5551F;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);font-family:"IBM Plex Sans",system-ui,sans-serif;color:var(--ink);}
+  a{color:var(--blueprint);text-decoration:none;}
+  a:hover{color:#1E3355;text-decoration:underline;}
+  h1,h2,h3{font-family:"Newsreader",Georgia,serif;margin:0;}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 64px;}
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:22px 64px;border-bottom:1px solid var(--rule);}
+  .brand{font-family:"IBM Plex Mono",monospace;font-size:15px;font-weight:500;letter-spacing:0.02em;}
+  .nav{display:flex;gap:28px;font-size:15px;}
+  .hero{padding:96px 0 80px;}
+  .hero-row{display:flex;gap:56px;align-items:center;}
+  .photo{position:relative;flex-shrink:0;width:220px;height:220px;}
+  .photo-inner{width:100%;height:100%;border:1.5px solid var(--blueprint);background:#EFEBE1;display:flex;align-items:center;justify-content:center;font-family:"IBM Plex Mono",monospace;font-size:13px;color:#6B7076;text-align:center;padding:16px;}
+  .tick{position:absolute;width:14px;height:14px;}
+  .tick.tl{top:-1px;left:-1px;border-top:2px solid var(--blueprint);border-left:2px solid var(--blueprint);}
+  .tick.br{bottom:-1px;right:-1px;border-bottom:2px solid var(--blueprint);border-right:2px solid var(--blueprint);}
+  .hero-text{display:flex;flex-direction:column;gap:18px;min-width:0;}
+  h1{font-size:46px;line-height:1.15;font-weight:600;}
+  .lede{font-size:17px;line-height:1.6;color:var(--ink-soft);max-width:560px;margin:0;}
+  .btn{display:inline-block;padding:12px 26px;background:var(--blueprint);color:var(--paper);font-size:15px;font-weight:500;border:1px solid var(--blueprint);}
+  .btn:hover{text-decoration:none;background:#1E3355;border-color:#1E3355;}
+  section{padding:0 0 80px;}
+  .section-inner{border-top:1px solid var(--rule);padding-top:40px;}
+  h2{font-size:26px;font-weight:600;margin-bottom:16px;}
+  p.body-text{font-size:16px;line-height:1.7;color:var(--ink-soft);margin:0 0 14px;max-width:680px;}
+  .work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;margin-top:8px;}
+  .card{display:flex;flex-direction:column;gap:14px;border:1px solid var(--rule);padding:28px;background:#FBFAF7;}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--rust);}
+  .card h3{font-size:21px;font-weight:600;}
+  .card p{font-size:15px;line-height:1.65;color:var(--ink-soft);margin:0;}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;}
+  .chip{font-family:"IBM Plex Mono",monospace;font-size:12px;padding:5px 10px;border:1px solid var(--rule);color:var(--ink-soft);}
+  .skills-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;}
+  .skill{padding:10px 14px;border:1px solid var(--rule);font-size:14px;text-align:center;}
+  footer{border-top:1px solid var(--rule);padding:24px 64px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:#6B7076;}
+  @media (max-width:760px){
+    .wrap,.topbar,footer{padding-left:24px;padding-right:24px;}
+    .hero-row{flex-direction:column;align-items:flex-start;}
+    .photo{width:180px;height:180px;}
+    .work-grid{grid-template-columns:1fr;}
+    .skills-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .nav{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">Manu Murukesan</div>
+  <div class="nav">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<div class="wrap hero">
+  <div class="hero-row">
+    <div class="photo">
+      <div class="photo-inner">[ YOUR PHOTO ]</div>
+      <div class="tick tl"></div>
+      <div class="tick br"></div>
+    </div>
+    <div class="hero-text">
+      <h1>Web developer &amp; co-founder,<br>building things people actually use.</h1>
+      <p class="lede">I build full websites and products — frontend, backend, and the database behind them. Co-founder of NeatUp, a local service marketplace in Kochi, and currently taking on freelance web development projects.</p>
+      <div><a class="btn" href="mailto:manumurukesan55@gmail.com">Email me</a></div>
+    </div>
+  </div>
+</div>
+
+<section id="about" class="wrap">
+  <div class="section-inner">
+    <h2>About</h2>
+    <p class="body-text">I hold an MSc in IT Management from Cardiff University, where I paired technical coursework with independent research into real user behaviour. That mix — building working systems and understanding how people actually use them — carries through everything below.</p>
+    <p class="body-text">Today I split my time between growing NeatUp and taking on freelance web development work for small businesses that want a site built properly — from the design through to a reliable system behind it.</p>
+  </div>
+</section>
+
+<section id="work" class="wrap">
+  <div class="section-inner">
+    <h2>Work</h2>
+    <div class="work-grid">
+      <div class="card">
+        <div class="eyebrow">Co-founder &amp; Full-Stack Developer</div>
+        <h3>NeatUp</h3>
+        <p>A platform connecting customers in Kochi with vetted local cleaning and pest control providers. Customers get an instant price estimate and book online in minutes; behind the scenes, each booking is routed to the right local partner. I built the entire frontend and backend.</p>
+        <div class="chips">
+          <span class="chip">Node.js</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">Next.js</span>
+          <span class="chip">Supabase</span>
+        </div>
+        <div><a href="https://neatup.in">neatup.in ↗</a></div>
+      </div>
+      <div class="card">
+        <div class="eyebrow">MSc Dissertation — Independent Research</div>
+        <h3>Data Breaches in Online Gaming</h3>
+        <p>Designed and ran a 34-question survey exploring privacy, identity theft, and trust in online gaming, gathering 48 responses. Analysed the data in Python to uncover a gap between security awareness and actual protective behaviour among gamers.</p>
+        <div class="chips">
+          <span class="chip">Google Forms</span>
+          <span class="chip">Python</span>
+          <span class="chip">Google Colab</span>
+          <span class="chip">UML / ERD</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-inner">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">Node.js</div>
+      <div class="skill">TypeScript</div>
+      <div class="skill">Next.js / React</div>
+      <div class="skill">Supabase</div>
+      <div class="skill">PostgreSQL</div>
+      <div class="skill">HTML / CSS</div>
+      <div class="skill">REST APIs</div>
+      <div class="skill">Git</div>
+      <div class="skill">Python (data analysis)</div>
+      <div class="skill">Survey design</div>
+      <div class="skill">UI/UX collaboration</div>
+      <div class="skill">Project delivery</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="wrap">
+  <div class="section-inner">
+    <h2>Get in touch</h2>
+    <p class="body-text">Have a project in mind, need a website built properly, or just want to say hello — I'd like to hear from you.</p>
+    <div><a class="btn" href="mailto:manumurukesan55@gmail.com">manumurukesan55@gmail.com</a></div>
+  </div>
+</section>
+
+<footer>Manu Murukesan — Kochi, Kerala</footer>
+
+</body>
+</html>
